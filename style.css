@@ -1,5 +1,5 @@
 @media screen and (min-width: 671px) {
-  .container-1 {
+  body {
     background-image: url(./images/IMG-20230424-WA0018.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -46,8 +46,8 @@
     border-color: #ee31b2;
   }
 }
-@media screen and (max-width: 670px) {
-  .container-1 {
+@media screen and (max-width: 670px) and (min-width: 400px) {
+  body {
     background-image: url(./images/IMG-20230424-WA0018.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -80,6 +80,54 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+  input {
+    min-width: 250px;
+    line-height: 2;
+    border-color: #ee31b2;
+  }
+  button {
+    padding: 5px 25px;
+    font-weight: bold;
+    background-color: #ee31b2;
+    color: #FFFFFF;
+    border-color: #ee31b2;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    background-image: url(./images/IMG-20230424-WA0018.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 220px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .mini-container {
+    width: 275px;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: unset;
+    margin-bottom: -290px;
+    font-family: sans-serif;
+    justify-content: center;
+    background-color: rgba(44, 44, 44, 0.8901960784);
+    color: #FFFFFF;
+  }
+  h1 {
+    margin-top: unset;
+    max-width: 165px;
+  }
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
   input {
     min-width: 250px;

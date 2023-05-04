@@ -1,71 +1,112 @@
 @use "_mixin" as *;
 @use "_colors" as styleColors;
 
-@media screen and (min-width:671px){
-    .container-1{
+@media screen and (min-width:671px) {
+    body {
         background-image: url(./images/IMG-20230424-WA0018.jpg);
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-          display: flex;
-        @include container-1(430px,column,flex-end,unset)
-        }
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        @include container-1(430px, column, flex-end, unset)
+    }
 
-        .mini-container{
-            @include mini (420px,420px,column,center,center,130px,-100px,sans-serif,unset);
-            background-color: styleColors.$grey;
-            color: styleColors.$white;
-        }
-        
-        h1{
-            @include h1 (50px,unset)
-            
-        }
-        
-        
-        .form-control{
-            @include form (column,flex-start,10px)
-        }
-        input{
-            @include input(280px,2);
-            border-color:styleColors.$pink
-        }
-        button{
-            @include button(5px 25px,bold);
-            background-color: styleColors.$pink;
-            color: styleColors.$white;
-            border-color: styleColors.$pink;
-        } 
-}
-@media screen and (max-width:670px){
-    .container-1{
-        background-image: url(./images/IMG-20230424-WA0018.jpg);
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-          display: flex;
-          @include container-1(320px,column,flex-end,center)
-        }
+    .mini-container {
+        @include mini (420px, 420px, column, center, center, 130px, -100px, sans-serif, unset);
+        background-color: styleColors.$grey;
+        color: styleColors.$white;
+    }
 
-        .mini-container{
-            @include mini (320px,435px,column,center,center,unset,-290px,sans-serif,center);
-            background-color: styleColors.$grey;
-            color: styleColors.$white;
-        }
-        
-        h1{
-            @include h1 (unset,200px)
-        }
-        .form-control{
-            @include form (column,flex-start,10px)
-        }
-        input{
-            @include input(250px,2);
-            border-color:styleColors.$pink
-        }
-        button{
-            @include button(5px 25px,bold);
-            background-color: styleColors.$pink;
-            color: styleColors.$white;
-            border-color: styleColors.$pink;
-        } 
+    h1 {
+        @include h1 (50px, unset)
+    }
+
+
+    .form-control {
+        @include form (column, flex-start, 10px)
+    }
+
+    input {
+        @include input(280px, 2);
+        border-color: styleColors.$pink
+    }
+
+    button {
+        @include button(5px 25px, bold);
+        background-color: styleColors.$pink;
+        color: styleColors.$white;
+        border-color: styleColors.$pink;
+    }
 }
 
+@media screen and (max-width:670px) and (min-width:400px) {
+    body {
+        background-image: url(./images/IMG-20230424-WA0018.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        @include container-1(320px, column, flex-end, center)
+    }
+
+    .mini-container {
+        @include mini (320px, 435px, column, center, center, unset, -290px, sans-serif, center);
+        background-color: styleColors.$grey;
+        color: styleColors.$white;
+    }
+
+    h1 {
+        @include h1 (unset, 200px)
+    }
+
+    .form-control {
+        @include form (column, flex-start, 10px)
+    }
+
+    input {
+        @include input(250px, 2);
+        border-color: styleColors.$pink
+    }
+
+    button {
+        @include button(5px 25px, bold);
+        background-color: styleColors.$pink;
+        color: styleColors.$white;
+        border-color: styleColors.$pink;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        background-image: url(./images/IMG-20230424-WA0018.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        @include container-1(220px, column, flex-end, center)
+    }
+
+    .mini-container {
+        @include mini (275px, 415px, column, center, center, unset, -290px, sans-serif, center);
+        background-color: styleColors.$grey;
+        color: styleColors.$white;
+    }
+
+    h1 {
+        @include h1 (unset, 165px)
+    }
+
+    .form-control {
+        @include form (column, flex-start, 8px)
+    }
+
+    input {
+        @include input(250px, 2);
+        border-color: styleColors.$pink
+    }
+
+    button {
+        @include button(5px 25px, bold);
+        background-color: styleColors.$pink;
+        color: styleColors.$white;
+        border-color: styleColors.$pink;
+    }
+
+}
