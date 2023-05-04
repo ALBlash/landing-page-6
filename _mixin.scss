@@ -1,50 +1,49 @@
-    @mixin img ($width,$max-width){
+    @mixin img ($width, $max-width) {
         width: $width;
-        max-width:$max-width ;
+        max-width: $max-width ;
     }
 
-    @mixin container-1 ($height,$direction,$justify-content,$align-items) {
+    @mixin container-1 ($height, $direction, $justify-content, $align-items) {
         height: $height;
         flex-direction: $direction;
         justify-content: $justify-content;
         align-items: $align-items;
     }
-    
-    @mixin mini ($width,$height,$direction,$align-items,$text-align,$margin-right,$margin-bottom,$font-family,$justify-content){
+
+    @mixin mini ($width, $height, $direction, $align-items, $text-align, $margin-right, $margin-bottom, $font-family, $justify-content) {
         width: $width;
         height: $height;
         display: flex;
         flex-direction: $direction;
-        align-items:$align-items;
+        align-items: $align-items;
         text-align: $align-items;
         margin-right: $margin-right;
         margin-bottom: $margin-bottom;
-        font-family:$font-family;
+        font-family: $font-family;
         justify-content: $justify-content;
     }
-    
-    @mixin h1 ($margin-top,$max-width){
+
+    @mixin h1 ($margin-top, $max-width) {
         margin-top: $margin-top;
         max-width: $max-width;
     }
 
-    @mixin form ($direction,$align-items,$gap){
+    @mixin form ($direction, $align-items, $gap) {
         display: flex;
         flex-direction: $direction;
         align-items: $align-items;
         gap: $gap;
-        
+
     }
-    
-    @mixin input ($min-width,$line-height){
+
+    @mixin input ($min-width, $line-height) {
         min-width: $min-width;
         line-height: $line-height;
     }
-    
-    @mixin button ($padding,$font-weight){
-        padding:$padding;
-        font-weight: $font-weight;
-      
-        
-    } 
 
+    @mixin button ($padding, $font-weight) {
+        padding: $padding;
+        font-weight: $font-weight;
+
+
+    }
