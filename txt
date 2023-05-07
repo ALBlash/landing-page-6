@@ -1,0 +1,2 @@
+open live:https://alblash.github.io/landing-page-6/
+open in Github:https://github.com/ALBlash/landing-page-6.git
