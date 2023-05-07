@@ -86,7 +86,7 @@
     }
 
     .mini-container {
-        @include mini (275px, 415px, column, center, center, unset, -290px, sans-serif, center);
+        @include mini (300px, 430px, column, center, center, unset, -290px, sans-serif, center);
         background-color: styleColors.$grey;
         color: styleColors.$white;
     }
